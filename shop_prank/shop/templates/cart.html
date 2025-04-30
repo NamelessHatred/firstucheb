@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Корзина</title>
+</head>
+<body>
+    <h1>Корзина</h1>
+    <ul>
+        <li><a href="{% url 'home' %}">Главная</a></li>
+        <li><a href="{% url 'about' %}">О компании</a>
+            <ul>
+                <li><a href="{% url 'contacts' %}">Контакты</a></li>
+                <li><a href="{% url 'find_us' %}">Как нас найти</a></li>
+            </ul>
+        </li>
+        <li><a href="{% url 'products' %}">Товары</a>
+            <ul>
+                <li><a href="{% url 'categories' %}">Категории</a></li>
+                <li><a href="{% url 'all_products' %}">Все товары</a></li>
+            </ul>
+        </li>
+        <li><a href="{% url 'cart' %}">Корзина</a></li>
+    </ul>
+    <p>Ваша корзина пуста.</p>
+</body>
+</html>
