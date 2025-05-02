@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Категории</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('path_to_your_image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: black; /* Цвет текста для контраста с фоном */
+        }
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для навигации */
+        }
+        .navbar a {
+            display: block;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.2); /* Эффект при наведении */
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="{% url 'home_view' %}">Главная</a>
+        <a href="{% url 'about_view' %}">О компании</a>
+        <a href="{% url 'contacts_view' %}">Контакты</a>
+        <a href="{% url 'find_us_view' %}">Как нас найти</a>
+        <a href="{% url 'products_view' %}">Товары</a>
+        <a href="{% url 'categories_view' %}">Категории</a>
+        <a href="{% url 'all_products_view' %}">Все товары</a>
+        <a href="{% url 'cart_view' %}">Корзина</a>
+    </div>
+    <div class="container">
+        <h1>Категории товаров</h1>
+        <li>Электроника</li>
+        <li>Одежда</li>
+        <li>Книги</li>
+</div>
+</body>
+</html>
+
